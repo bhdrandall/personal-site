@@ -4,7 +4,6 @@ import './globals.css';
 import { ThemeProvider } from './providers';
 import ThemeToggle from "@/components/ThemeToggle";
 import SkipToContent from "@/components/SkipToContent";
-import HighContrastToggle from "@/components/HighContrastToggle";
 import Link from "next/link";
 
 const inter = Inter({ 
@@ -46,7 +45,6 @@ export default function RootLayout({
       <body className="min-h-screen bg-white dark:bg-dark text-gray-900 dark:text-gray-100 transition-colors duration-200">
         <ThemeProvider>
           <SkipToContent />
-          <HighContrastToggle />
           
           <header className="sticky top-0 z-30 w-full bg-white/80 dark:bg-dark/90 backdrop-blur shadow-md border-b border-indigo-100 dark:border-dark-light transition-all duration-300">
             <nav className="container mx-auto flex items-center justify-between py-4 px-4 md:px-0">
