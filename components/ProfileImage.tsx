@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ProfileImage() {
   const [imageSrc, setImageSrc] = useState('/images/profile.jpg');
@@ -13,19 +14,13 @@ export default function ProfileImage() {
 
   return (
     <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg mb-6 group">
-      <img 
+      <Image 
         src={imageSrc}
         alt={altText}
-        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         width={160}
         height={160}
-        loading="eager"
-        fetchPriority="high"
-        decoding="async"
-        style={{
-          contentVisibility: 'auto',
-          aspectRatio: '1 / 1'
-        }}
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+        priority
         onError={handleError}
       />
       <div 

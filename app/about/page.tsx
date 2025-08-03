@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Montserrat } from "next/font/google";
+import Image from 'next/image';
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });
 
 export default function About() {
@@ -9,13 +10,14 @@ export default function About() {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
           <div className="md:w-1/3 flex flex-col items-center md:items-end text-center md:text-right">
-            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-border shadow-lg mb-6">
-              <img 
+            <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-border shadow-lg mb-6 relative">
+              <Image 
                 src="/images/profile.jpg" 
                 alt="Benjamin Randall" 
-                className="w-full h-full object-cover"
-                width={160}
-                height={160}
+                className="object-cover"
+                fill
+                sizes="192px"
+                priority
               />
             </div>
             <h1 className={`${montserrat.className} text-4xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent`}>
@@ -26,7 +28,7 @@ export default function About() {
           
           <div className="md:w-2/3 space-y-4">
             <p className="text-foreground/90 text-lg leading-relaxed">
-              I'm an incredibly curious and creative full-stack developer with a passion for solving puzzles and building elegant solutions. I thrive on learning new technologies and immersing myself in challenging projects, always striving for technical excellence and creative problem-solving.
+              I&apos;m a passionate software engineer with expertise in building modern web applications. I thrive on learning new technologies and immersing myself in challenging projects, always striving for technical excellence and creative problem-solving.
             </p>
             <p className="text-foreground/80 leading-relaxed">
               My journey in technology has taken me through various roles, from building public-facing government systems to leading CMS migrations and developing large-scale React applications. I believe in clean, maintainable code and creating intuitive user experiences.

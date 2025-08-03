@@ -20,14 +20,13 @@ export default function Home() {
         {/* Right Column - Content */}
         <div className="md:w-2/3 space-y-6">
           <p className="text-foreground/90 text-lg leading-relaxed">
-            I'm a passionate full-stack developer with a love for creating elegant, efficient solutions to complex problems. 
-            With expertise across the entire development stack, I bring ideas to life through clean, maintainable code and 
+            I&apos;m a passionate software engineer with expertise in building modern web applications. With expertise across the entire development stack, I bring ideas to life through clean, maintainable code and 
             thoughtful user experiences.
           </p>
           
           <p className="text-foreground/80 leading-relaxed">
             My approach combines technical excellence with creative problem-solving, always keeping the end user in mind. 
-            I'm constantly learning and adapting to new technologies and methodologies to stay at the forefront of web development.
+            I&apos;m currently working as a Senior Software Engineer at smartimpact, and methodologies to stay at the forefront of web development.
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4">

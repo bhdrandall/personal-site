@@ -17,12 +17,12 @@ export default function Contact() {
             <h1 className={`${montserrat.className} text-4xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent`}>
               Get In Touch
             </h1>
-            <p className="text-primary font-medium mt-2">Let's work together</p>
+            <p className="text-primary font-medium mt-2">Let&apos;s work together</p>
           </div>
           
           <div className="md:w-2/3 space-y-6">
             <p className="text-foreground/80 text-lg leading-relaxed">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+              <p className="text-foreground/70">I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p> 
               Feel free to reach out through any of the following channels.
             </p>
             
@@ -50,7 +50,7 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div className="ml-4">
-                      <h3 className="text-sm font-medium text-foreground/70">Phone</h3>
+                      <h3 className="text-lg font-semibold text-foreground">Let&apos;s Connect</h3>
                       <a href="tel:07761866603" className="text-primary hover:underline">07761 866603</a>
                     </div>
                   </div>

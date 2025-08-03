@@ -1,50 +1,26 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
-import Link from "next/link";
-import { ThemeProvider } from "./providers";
+import { Inter, Montserrat } from 'next/font/google';
+import './globals.css';
+import { ThemeProvider } from './providers';
 import ThemeToggle from "@/components/ThemeToggle";
 import SkipToContent from "@/components/SkipToContent";
 import HighContrastToggle from "@/components/HighContrastToggle";
-import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ 
   subsets: ["latin"],
-  display: 'swap',
   variable: '--font-inter',
 });
 
 const montserrat = Montserrat({ 
   subsets: ["latin"], 
-  weight: ["700"],
+  weight: ["400", "500", "600", "700"],
   variable: '--font-montserrat',
 });
 
 export const metadata: Metadata = {
-  title: "Benjamin Randall | Full-Stack Developer",
-  description: "Personal portfolio of Benjamin Randall, a Full-Stack Developer specializing in React, .NET, and modern web technologies.",
-  keywords: ["Full-Stack Developer", "React", ".NET", "TypeScript", "Web Development", "Portfolio", "Accessibility"],
-  authors: [{ name: 'Benjamin Randall' }],
-  creator: 'Benjamin Randall',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#0f172a' },
-  ],
-  viewport: 'width=device-width, initial-scale=1',
-  robots: 'index, follow',
-  openGraph: {
-    type: 'website',
-    locale: 'en_GB',
-    url: 'https://benjaminrandall.dev',
-    title: 'Benjamin Randall | Full-Stack Developer',
-    description: 'Personal portfolio of Benjamin Randall, a Full-Stack Developer specializing in React, .NET, and modern web technologies.',
-    siteName: 'Benjamin Randall',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Benjamin Randall | Full-Stack Developer',
-    description: 'Personal portfolio of Benjamin Randall, a Full-Stack Developer specializing in React, .NET, and modern web technologies.',
-    creator: '@benrandall',
-  },
+  title: "Benjamin Randall - Senior Software Engineer",
+  description: "Personal portfolio of Benjamin Randall, a Senior Software Engineer specializing in modern web development.",
 };
 
 export default function RootLayout({
